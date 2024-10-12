@@ -50,10 +50,12 @@
         Przyjmuje <code>całkowite wartości liczbowe</code>, oznaczające pozycję. Domyślnie <code>0</code>.
     </article>
 
-    Element nr <input id="klasaorder" type="number" min="1" max="4"><br>
-    order: <input id="order" type="number">
-    <button onclick="order()">ZMIEŃ</button>
-    <button onclick="reset(1)">RESETUJ</button>
+    <div class="inputdesign">
+        <label>Element nr</label> <input id="klasaorder" type="number" min="1" max="4"><br>
+        <label>order: </label> <input id="order" type="number"><br>
+        <button onclick="order()">ZMIEŃ</button>
+        <button onclick="reset(1)">RESETUJ</button>
+    </div>
 
     <h2>flex-grow</h2>
     <article class="halfmain">
@@ -63,11 +65,13 @@
         Przyjmuje <code>całkowite nieujemne wartości liczbowe</code>. Domyślnie <code>0</code>.
     </article>
 
-    Element nr <input id="klasagrow" type="number" min="1" max="4"><br>
-    flex-grow: <input id="grow" type="number">
-    <button onclick="grow()">ZMIEŃ</button>
-    <button onclick="reset(2)">RESETUJ</button>
-
+    <div class="inputdesign">
+        <label>Element nr</label> <input id="klasagrow" type="number" min="1" max="4"><br>
+        <label>flex-grow: </label> <input id="grow" type="number"><br>
+        <button onclick="grow()">ZMIEŃ</button>
+        <button onclick="reset(2)">RESETUJ</button>
+    </div>
+    
     <h2>flex-shrink</h2>
     <article class="halfmain">
         Określa, <i>w jakim stopniu element powinien się kurczyć</i>, gdy brakuje miejsca w kontenerze flex.
@@ -76,10 +80,12 @@
         Przyjmuje <code>całkowite nieujemne wartości liczbowe</code>. Domyślnie <code>1</code>.
     </article>
 
-    Element nr <input id="klasashrink" type="number" min="1" max="4"><br>
-    flex-shrink: <input id="shrink" type="number">
-    <button onclick="shrink()">ZMIEŃ</button>
-    <button onclick="reset(3)">RESETUJ</button>
+    <div class="inputdesign">
+        <label>Element nr</label> <input id="klasashrink" type="number" min="1" max="4"><br>
+        <label>flex-shrink:</label> <input id="shrink" type="number"><br>
+        <button onclick="shrink()">ZMIEŃ</button>
+        <button onclick="reset(3)">RESETUJ</button>
+    </div>
 
     <h2>flex-basis</h2>
     <article class="halfmain">
@@ -89,10 +95,12 @@
         Przyjmuje takie wartości jak <code>width</code>. Domyślnie <code>auto</code>.
     </article>
 
-    Element nr <input id="klasabasis" type="number" min="0" max="4"><br>
-    flex-basis: <input id="basis">
-    <button onclick="basis()">ZMIEŃ</button>
-    <button onclick="reset(4)">RESETUJ</button>
+    <div class="inputdesign">
+        <label>Element nr</label> <input id="klasabasis" type="number" min="0" max="4"><br>
+        <label>flex-basis:</label> <input id="basis"><br>
+        <button onclick="basis()">ZMIEŃ</button>
+        <button onclick="reset(4)">RESETUJ</button>
+    </div>
 
     <h2>flex</h2>
     <article class="halfmain">
@@ -103,10 +111,12 @@
         <code>none | [ &lt;flex-grow&gt; &lt;flex-shrink&gt;? || &lt;flex-basis&gt; ]</code>
     </article>
 
-    Element nr <input id="klasaflex" type="number" min="0" max="4"><br>
-    flex: <input id="flex">
+    <div class="inputdesign">
+        <label>Element nr</label> <input id="klasaflex" type="number" min="0" max="4"><br>
+    <label>flex: </label> <input id="flex"><br>
     <button onclick="flex()">ZMIEŃ</button>
     <button onclick="reset(5)">RESETUJ</button>
+    </div>
 
     <h2>align-self</h2>
     <article class="halfmain">
@@ -116,10 +126,12 @@
         Przyjmowanie wartości: <code>auto</code>, <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code> i <code>stretch</code>. Domyślnie <code>auto</code> - pobiera z kontenera.
     </article>
 
-    Element nr <input id="klasaself" type="number" min="1" max="4"><br>
-    align-self: <input id="self" type="text">
-    <button onclick="self()">ZMIEŃ</button>
-    <button onclick="reset(6)">RESETUJ</button>
+    <div class="inputdesign">
+        <label>Element nr</label> <input id="klasaself" type="number" min="1" max="4"><br>
+       <label>align-self:</label> <input id="self" type="text"><br>
+        <button onclick="self()">ZMIEŃ</button>
+        <button onclick="reset(6)">RESETUJ</button>
+    </div>
 
     <h2>margin</h2>
     <article class="halfmain">
@@ -129,10 +141,12 @@
         Przyjmuje takie wartości jak <code>margin</code>.
     </article>
 
-    Element nr <input id="klasamargin" type="number" min="1" max="4"><br>
-    margin: <input id="margin" type="text">
-    <button onclick="margin()">ZMIEŃ</button>
-    <button onclick="reset(7)">RESETUJ</button>
+    <div class="inputdesign">
+        <label>Element nr</label> <input id="klasamargin" type="number" min="1" max="4"><br>
+        <label>margin:</label> <input id="margin" type="text"><br>
+        <button onclick="margin()">ZMIEŃ</button>
+        <button onclick="reset(7)">RESETUJ</button>
+    </div>
 
    </main>
 
