@@ -28,7 +28,7 @@
 
    <main>
 
-    <div class="flex">
+    <div class="flexc">
         <div class="fitem1">1</div>
         <div class="fitem2">2</div>
         <div class="fitem3">3</div>
@@ -36,7 +36,7 @@
     </div>
     <p class="flexdesc">
         display: flex;<br>
-        flex-wrap: wrap;<br>
+        flex-wrap: nowrap;<br>
         justify-content: center;<br>
     </p>
 
@@ -47,24 +47,39 @@
         Określa <i>kolejność wyświetlania</i> elementu w kontenerze flex, niezależnie od pozycji w kodzie HTML.
         <br>
         <br>
-        Przyjmuje <code>wartości liczbowe</code>, oznaczające pozycję. Domyślnie <code>0</code>.
+        Przyjmuje <code>całkowite wartości liczbowe</code>, oznaczające pozycję. Domyślnie <code>0</code>.
     </article>
+
+    Element nr <input id="klasaorder" type="number" min="1" max="4"><br>
+    order: <input id="order" type="number">
+    <button onclick="order()">ZMIEŃ</button>
+    <button onclick="reset(1)">RESETUJ</button>
 
     <h2>flex-grow</h2>
     <article class="halfmain">
-        Określa, <i>jak dużo miejsca</i> w kontenerze <i>element powinien zajmować</i> wzdłuż głównej osi w porównaniu z innymi.
+        Określa, <i>jak bardzo powinien się rozciągać element</i> w kontenerze wzdłuż głównej osi w porównaniu z innymi.
         <br>
         <br>
-        Przyjmuje <code>nieujemne wartości liczbowe</code>. Domyślnie <code>0</code>.
+        Przyjmuje <code>całkowite nieujemne wartości liczbowe</code>. Domyślnie <code>0</code>.
     </article>
+
+    Element nr <input id="klasagrow" type="number" min="1" max="4"><br>
+    flex-grow: <input id="grow" type="number">
+    <button onclick="grow()">ZMIEŃ</button>
+    <button onclick="reset(2)">RESETUJ</button>
 
     <h2>flex-shrink</h2>
     <article class="halfmain">
         Określa, <i>w jakim stopniu element powinien się kurczyć</i>, gdy brakuje miejsca w kontenerze flex.
         <br>
         <br>
-        Przyjmuje <code>nieujemne wartości liczbowe</code>. Domyślnie <code>1</code>.
+        Przyjmuje <code>całkowite nieujemne wartości liczbowe</code>. Domyślnie <code>1</code>.
     </article>
+
+    Element nr <input id="klasashrink" type="number" min="1" max="4"><br>
+    flex-shrink: <input id="shrink" type="number">
+    <button onclick="shrink()">ZMIEŃ</button>
+    <button onclick="reset(3)">RESETUJ</button>
 
     <h2>flex-basis</h2>
     <article class="halfmain">
@@ -74,13 +89,24 @@
         Przyjmuje takie wartości jak <code>width</code>. Domyślnie <code>auto</code>.
     </article>
 
+    Element nr <input id="klasabasis" type="number" min="0" max="4"><br>
+    flex-basis: <input id="basis">
+    <button onclick="basis()">ZMIEŃ</button>
+    <button onclick="reset(4)">RESETUJ</button>
+
     <h2>flex</h2>
     <article class="halfmain">
         Właściwość flex w CSS jest skrótem dla <code>flex-grow</code>, <code>flex-shrink</code> i <code>flex-basis</code>, co <i>pozwala na zwięzłe i wygodne ustawienie tych trzech wartości</i> jednocześnie. Używanie skróconych form jest również zalecane przez W3.
         <br>
         <br>
-        d
+        Przyjmuje wartości według wzoru:<br>
+        <code>none | [ &lt;flex-grow&gt; &lt;flex-shrink&gt;? || &lt;flex-basis&gt; ]</code>
     </article>
+
+    Element nr <input id="klasaflex" type="number" min="0" max="4"><br>
+    flex: <input id="flex">
+    <button onclick="flex()">ZMIEŃ</button>
+    <button onclick="reset(5)">RESETUJ</button>
 
     <h2>align-self</h2>
     <article class="halfmain">
@@ -90,6 +116,11 @@
         Przyjmowanie wartości: <code>auto</code>, <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code> i <code>stretch</code>. Domyślnie <code>auto</code> - pobiera z kontenera.
     </article>
 
+    Element nr <input id="klasaself" type="number" min="1" max="4"><br>
+    align-self: <input id="self" type="text">
+    <button onclick="self()">ZMIEŃ</button>
+    <button onclick="reset(6)">RESETUJ</button>
+
     <h2>margin</h2>
     <article class="halfmain">
         Wartość marginesu elementu może mieć specjalne zachowanie w kontenerze flex. Ustawienie wartości <code>auto</code> wzdłuż osi głównej powoduje <i>automatyczne rozłożenie pozostałego miejsca między elementami</i>.
@@ -97,6 +128,11 @@
         <br>
         Przyjmuje takie wartości jak <code>margin</code>.
     </article>
+
+    Element nr <input id="klasamargin" type="number" min="1" max="4"><br>
+    margin: <input id="margin" type="text">
+    <button onclick="margin()">ZMIEŃ</button>
+    <button onclick="reset(7)">RESETUJ</button>
 
    </main>
 
