@@ -101,22 +101,84 @@ main h1{
     margin-bottom: 0.7em;
 }
 
-main h1~article{
-    line-height:1.6em;
-    margin-bottom:2em;
-}
-
 main h2{
     font-weight:520;
     font-size:1.5em;
-    margin-bottom: 0.7em;
+    margin: 0.9em 0 0.35em;
+}
+
+main article{
+    line-height:1.6em;
+    margin-bottom:2em;
 }
 
 .wholemain{
     padding:1em 0;
     width:98%;
     margin:0 auto;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.55);
     border-radius: 50px;
     margin-bottom:1em;
+}
+
+.halfmain{
+    width:45%;
+    background-color: rgba(255,255,255,0.45);
+    border-radius:50px;
+    padding:1em 2em;
+    font-size:0.9em;
+}
+
+code{
+    font-size:1.2em;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color:lightcoral;
+}
+
+i{
+    font-size:1.2em;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    color:lightskyblue;
+}
+
+main .flex{
+    height:400px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 50px;
+    width:45%;
+    position:fixed;
+    right:6vw;
+    top: 50%;
+    padding:1em 2em;
+    -ms-transform: translate(0, -50%);
+    transform: translate( 0, -50%);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+main .flex div{
+    background-color: lightseagreen;
+    width:100px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border:2px dotted blue;
+}
+
+main .flexdesc{
+    position:fixed;
+    left:50vw;
+    top: 75vh;
+}
+
+@media (max-height:840px){
+    body main .flex{
+        top:420px;
+    }
+    body main .flexdesc{
+        top:640px;
+    }
 }
