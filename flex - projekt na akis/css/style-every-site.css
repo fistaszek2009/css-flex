@@ -1,0 +1,122 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    color:white;
+}
+
+body{
+    background: #0b1226;
+    display:grid;
+    grid-template-columns: 6vw 1fr 1fr 1fr 1fr 6vw;
+}
+
+header{
+    padding-left:2em;
+    height:100px;
+    grid-column: 1/4;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #0b1226 , #101a36);
+}
+
+header h1{
+    z-index:1;
+    font-family: "Audiowide", Cambria, Cochin, Georgia, Times, serif;
+    font-weight: 400;
+    font-size:3.3em;
+    margin-left:1.4vw;
+}
+
+nav{
+    height:100px;
+    background: linear-gradient(to right, #101a36 , #182750);
+    grid-column: 4/7;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    width:100%;
+    height:100%;
+    flex-flow:row wrap;
+    align-items:center;
+    align-content:space-evenly;
+    justify-content:flex-end;;
+}
+
+nav ul li{
+    margin:0 1.4em;
+}
+
+@media (max-width:700px){
+    body nav ul li{
+        margin-right:5px;
+    }
+
+    body header{
+        padding-left:0;
+    }
+}
+
+nav ul a{
+    font-family: "Poppins", Georgia, serif;
+    color:white;
+    text-decoration: none;
+    font-size:1.1em;
+    padding-bottom:2px;
+    transition: 0.2s linear;;
+}
+
+nav ul li a:hover{
+    color:rgb(156, 156, 156);
+    border-bottom:2px solid;
+}
+
+footer{
+    font-family: "Poppins", Georgia, serif; 
+    font-size:1.3em;
+    background: linear-gradient(to right, #0b1226 , #182750);
+    grid-column: 1/7;
+    height:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    grid-column: 2/6;
+    padding:2em 0.5em;
+    font-family: Poppins, serif;
+    font-size:1.1em;
+}
+
+main h1{
+    font-weight:600;
+    width:60%;
+    padding-bottom:0.1em;
+    border-bottom: 2px solid;
+    margin-bottom: 0.7em;
+}
+
+main h1~article{
+    line-height:1.6em;
+    margin-bottom:2em;
+}
+
+main h2{
+    font-weight:520;
+    font-size:1.5em;
+    margin-bottom: 0.7em;
+}
+
+.wholemain{
+    padding:1em 0;
+    width:98%;
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    margin-bottom:1em;
+}
