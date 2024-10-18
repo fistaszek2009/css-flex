@@ -196,7 +196,7 @@ main .flexdesc{
     }
 }
 
-input,button{
+input,button,select{
     color:black;
     font-family:Poppins, serif;
     font-weight: 600;
@@ -240,4 +240,7 @@ button:nth-child(even){
 button:hover{
     background-color: #101a36;
     color:white;
+}
+option{
+    color: black;
 }
