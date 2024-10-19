@@ -16,7 +16,7 @@
     <title>Właściwości rodzica - Flex - zajęcia na akis</title>
 
     <style>
-        .temp1{
+        .temp1 {
             width: 100%;
             height: 80px;
         }
@@ -86,7 +86,7 @@
         </article>
 
         <div class="inputdesign">
-            <label for="justify-content">Flex-Direction:</label>
+            <label for="justify-content">justify-content:</label>
             <select id="justify-content" name="justify-content">
                 <div class="wybory">
                     <option value="flex-start">Flex Start</option>
@@ -103,14 +103,73 @@
 
         <h2>align-items</h2>
         <article class="halfmain">
-            Określa, jak elementy wewnątrz kontenera flex są <i>rozmieszczone wzdłuż osi przeciwnej do głównej</i>, umożliwiając ich
-            wyrównanie na początku, końcu, w centrum lub równomiernie.
+            Określa, jak elementy wewnątrz kontenera flex są <i>rozmieszczone wzdłuż osi przeciwnej do głównej</i>,
+            umożliwiając ich
+            wyrównanie na początku, końcu, w centrum, równomiernie, wobec tekstu, lub aby zabierały całą możliwą
+            przestrzeń.
             <br>
             <br>
-            Przyjmuje wartości: <code>flex-start, flex-end, center, space-between, space-around, space-evenly lub baseline (względem lini teksu)</code>,
+            Przyjmuje wartości:
+            <code>flex-start, flex-end, center, space-between, space-around, space-evenly lub baseline</code>,
             oznaczające rozmieszczenie na osi.
             Domyślnie <code>flex-start</code>.
         </article>
+
+        <div class="inputdesign">
+            <label for="align-items">align-items:</label>
+            <select id="align-items" name="align-items">
+                <div class="wybory">
+                    <option value="flex-start">Flex Start</option>
+                    <option value="flex-end">Flex End</option>
+                    <option value="center">Center</option>
+                    <option value="baseline">Baseline</option>
+                </div>
+            </select><br>
+            <button onclick="alignItems()">ZMIEŃ</button>
+            <button onclick="reset(3)">RESETUJ</button>
+        </div>
+
+        <h2>flex-wrap</h2>
+        <article class="halfmain">
+            Określa, czy elementy <i>wewnątrz kontenera flex</i> powinny zawijać się do następnego wiersza, gdy nie
+            mieszczą
+            się w dostępnej przestrzeni, co pozwala na lepsze zarządzanie układem elementów w responsywnych projektach.
+            <br>
+            <br>
+            Przyjmuje wartości:
+            <code>nowrap, wrap, wrap-reverse</code>.
+            Domyślnie <code>nowrap</code>.
+        </article>
+
+        <div class="inputdesign">
+            <label for="flex-wrap">Flex-wrap:</label>
+            <select id="flex-wrap" name="flex-wrap">
+                <div class="wybory">
+                    <option value="nowrap">nowrap</option>
+                    <option value="wrap">wrap</option>
+                    <option value="wrap-reverse">wrap-reverse</option>
+                </div>
+            </select><br>
+            <button onclick="flexWrap()">ZMIEŃ</button>
+            <button onclick="reset(4)">RESETUJ</button>
+        </div>
+
+        <h2>gap</h2>
+        <article class="halfmain">
+            Określa, jaką odległość między sobą mają mieć elementy <i>wewnątrz kontenera flex</i>.
+            <br>
+            <br>
+            Przyjmuje wartości:
+            <code>liczbowe</code>.
+            Domyślnie <code>0</code>.
+        </article>
+
+        <div class="inputdesign">
+            <label for="gap">Flex-Direction: (w px)</label>
+            <input type="number" id="gap" name="gap" min="0" step="1"><br>
+            <button onclick="gap()">ZMIEŃ</button>
+            <button onclick="reset(5)">RESETUJ</button>
+        </div>
 
     </main>
 
