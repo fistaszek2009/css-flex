@@ -14,6 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../js/rodzic.js" defer></script>
     <title>Właściwości rodzica - Flex - zajęcia na akis</title>
+
+    <style>
+        .temp1{
+            width: 100%;
+            height: 80px;
+        }
+    </style>
 </head>
 
 <body>
@@ -93,6 +100,17 @@
             <button onclick="justify()">ZMIEŃ</button>
             <button onclick="reset(2)">RESETUJ</button>
         </div>
+
+        <h2>align-items</h2>
+        <article class="halfmain">
+            Określa, jak elementy wewnątrz kontenera flex są <i>rozmieszczone wzdłuż osi przeciwnej do głównej</i>, umożliwiając ich
+            wyrównanie na początku, końcu, w centrum lub równomiernie.
+            <br>
+            <br>
+            Przyjmuje wartości: <code>flex-start, flex-end, center, space-between, space-around, space-evenly lub baseline (względem lini teksu)</code>,
+            oznaczające rozmieszczenie na osi.
+            Domyślnie <code>flex-start</code>.
+        </article>
 
     </main>
 

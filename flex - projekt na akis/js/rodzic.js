@@ -6,42 +6,43 @@ function jakieDziecko(numerOdInputa){
     return dziecko;
 }
 
-function direction(){
+function direction() {
     const wartosc = document.querySelector("#flex-direction").value;
 
     flexc.style.flexDirection = wartosc;
-    if(wartosc == 'column' || wartosc == 'column-reverse')
+    if (wartosc == 'column' || wartosc == 'column-reverse') {
         flexItems.forEach(item => {
-            item.style.width = '100%';
-            item.style.height = '100px';
+            item.classList.add("temp1"); // Use 'item' instead of 'element'
         });
+    }
 }
 
-function justify(){
+function justify() {
     const wartosc = document.querySelector("#justify-content").value;
 
-    flexc.style = `justify-content:${wartosc}`;
+    flexc.style.justifyContent = wartosc; // Set property directly
 }
 
-function reset(numerWlasciwosci){
+function reset(numerWlasciwosci) {
     let wartoscDomyslna;
     let wlasciwosc;
 
-    if(numerWlasciwosci == 1)
-    {
+    if (numerWlasciwosci == 1) {
         wartoscDomyslna = "row";
-        wlasciwosc="flex-direction";
+        wlasciwosc = "flex-direction";
 
         flexItems.forEach(item => {
-            item.style.width = '';
-            item.style.height = '';
+            item.classList.remove("temp1"); // Use 'item' here
         });
-    }
-    else if(numerWlasciwosci == 2)
-    {
+    } else if (numerWlasciwosci == 2) {
         wartoscDomyslna = "center";
-        wlasciwosc="justify-content";
+        wlasciwosc = "justify-content";
     }
 
-    flexc.style=`${wlasciwosc}:${wartoscDomyslna};`;
+    // Set the default value directly
+    if (wlasciwosc === "flex-direction") {
+        flexc.style.flexDirection = wartoscDomyslna;
+    } else if (wlasciwosc === "justify-content") {
+        flexc.style.justifyContent = wartoscDomyslna;
+    }
 }
