@@ -36,6 +36,7 @@ main>div{
     color:antiquewhite;
     flex:1;
     display: flex;
+    border-radius: 30px;
 }
 
 main>div>span{
