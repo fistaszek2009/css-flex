@@ -43,7 +43,7 @@ function flexWrap() {
 function gap() {
     const wartosc = document.querySelector("#gap").value;
 
-    flexc.style.gap = `${wartosc} px`;
+    flexc.style.gap = `${wartosc}px`;
 }
 
 
@@ -67,7 +67,7 @@ function reset(numerWlasciwosci) {
         wartoscDomyslna = "nowrap";
         flexc.style.flexWrap = wartoscDomyslna;
     } else if (numerWlasciwosci == 5) {
-        wartoscDomyslna = "0 px";
+        wartoscDomyslna = "0px";
         flexc.style.gap = wartoscDomyslna;
     }
 }
