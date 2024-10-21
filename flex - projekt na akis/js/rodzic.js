@@ -7,6 +7,7 @@ function jakieDziecko(numerOdInputa) {
 }
 
 function direction() {
+    reset(1);
     const wartosc = document.querySelector("#flex-direction").value;
 
     flexc.style.flexDirection = wartosc;
