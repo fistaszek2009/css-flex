@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PL">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -110,9 +110,9 @@
             <br>
             <br>
             Przyjmuje wartości:
-            <code>flex-start, flex-end, center, space-between, space-around, space-evenly lub baseline</code>,
+            <code>flex-start, flex-end, center, space-between, space-around, space-evenly, baseline lub stretch</code>,
             oznaczające rozmieszczenie na osi.
-            Domyślnie <code>flex-start</code>.
+            Domyślnie <code>stretch</code>.
         </article>
 
         <div class="inputdesign">
@@ -123,6 +123,36 @@
                     <option value="flex-end">Flex End</option>
                     <option value="center">Center</option>
                     <option value="baseline">Baseline</option>
+                    <option value="stretch">Stretch</option>
+                </div>
+            </select><br>
+            <button onclick="alignItems()">ZMIEŃ</button>
+            <button onclick="reset(3)">RESETUJ</button>
+        </div>
+
+        <h2>align-content</h2>
+        <article class="halfmain">
+            Określa, jak cała zawartość wewnątrz kontenera flex jest <i>rozmieszczona wzdłuż osi przeciwnej do
+                głównej</i>,
+            gdy istnieje dodatkowa przestrzeń. Umożliwia to kontrolowanie sposobu, w jaki linie elementów są
+            wyrównane w kontenerze, w przypadku gdy nie zajmują one całej dostępnej przestrzeni.
+            <br>
+            <br>
+            Przyjmuje wartości:
+            <code>flex-start, flex-end, center, space-between, space-around lub stretch</code>,
+            które definiują, jak wiele przestrzeni zostanie rozdzielone między linie.
+            Domyślnie <code>stretch</code>.
+        </article>
+
+        <div class="inputdesign">
+            <label for="align-content">align-content:</label>
+            <select id="align-content" name="align-content">
+                <div class="wybory">
+                    <option value="flex-start">Flex Start</option>
+                    <option value="flex-end">Flex End</option>
+                    <option value="center">Center</option>
+                    <option value="baseline">Baseline</option>
+                    <option value="stretch">Stretch</option>
                 </div>
             </select><br>
             <button onclick="alignItems()">ZMIEŃ</button>
@@ -160,7 +190,7 @@
             <br>
             <br>
             Przyjmuje wartości:
-            <code>liczbowe</code>.
+            <code>odległości</code>.
             Domyślnie <code>0</code>.
         </article>
 
@@ -168,14 +198,25 @@
             <label for="gap">gap: (w px)</label>
             <input type="number" id="gap" name="gap" min="0" step="1"><br>
             <button onclick="gap()">ZMIEŃ</button>
-            <button onclick="reset(5)">RESETUJ</button>
+            <button onclick="reset(6)">RESETUJ</button>
         </div>
+
+        <h2>flex-flow</h2>
+        <article class="halfmain">
+            Skrót dla <i>flex-direction</i> i <i>flex-wrap</i>
+            <br>
+            <br>
+            Przyjmuje wartości według wzoru:
+            <code>kierunek flex-direction</code>, <code>rodzaj zawijania flex-wrap</code>.
+        </article>
 
     </main>
 
     <footer>
         ©2024 Stanisław Filipek i Tomasz Mazur
     </footer>
+
+
 
 </body>
 

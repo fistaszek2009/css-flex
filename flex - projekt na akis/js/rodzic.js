@@ -69,5 +69,8 @@ function reset(numerWlasciwosci) {
     } else if (numerWlasciwosci == 5) {
         wartoscDomyslna = "0px";
         flexc.style.gap = wartoscDomyslna;
+    } else if (numerWlasciwosci == 6) {
+        wartoscDomyslna = "stretch";
+        flexc.style.gap = wartoscDomyslna;
     }
 }
