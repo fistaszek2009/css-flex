@@ -20,6 +20,9 @@
             width: auto;
             height: auto;
         }
+        b{
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -138,7 +141,7 @@
             Określa, jak cała zawartość wewnątrz kontenera flex jest <i>rozmieszczona wzdłuż osi przeciwnej do
                 głównej</i>,
             gdy istnieje dodatkowa przestrzeń. Umożliwia to kontrolowanie sposobu, w jaki linie elementów są
-            wyrównane w kontenerze, w przypadku gdy nie zajmują one całej dostępnej przestrzeni.
+            wyrównane w kontenerze, w przypadku <b>gdy nie zajmują one całej dostępnej przestrzeni</b>.
             <br>
             <br>
             Przyjmuje wartości:
@@ -160,15 +163,16 @@
                     <option value="stretch">Stretch</option>
                 </div>
             </select><br>
-            <button onclick="alignItems()">ZMIEŃ</button>
-            <button onclick="reset(3)">RESETUJ</button>
+            <button onclick="alignContent()">ZMIEŃ</button>
+            <button onclick="reset(5)">RESETUJ</button>
         </div>
 
         <h2>flex-wrap</h2>
         <article class="halfmain">
-            Określa, czy elementy <i>wewnątrz kontenera flex</i> powinny zawijać się do następnego wiersza, gdy nie
-            mieszczą
-            się w dostępnej przestrzeni, co pozwala na lepsze zarządzanie układem elementów w responsywnych projektach.
+            Określa, czy elementy <i>wewnątrz kontenera flex</i> powinny zawijać się do następnego wiersza, gdy <b>nie
+                mieszczą
+                się w dostępnej przestrzeni</b>, co pozwala na lepsze zarządzanie układem elementów w responsywnych
+            projektach.
             <br>
             <br>
             Przyjmuje wartości:

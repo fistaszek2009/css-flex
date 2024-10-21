@@ -29,6 +29,12 @@ function alignItems() {
     flexc.style.alignItems = wartosc;
 }
 
+function alignContent() {
+    const wartosc = document.querySelector("#align-content").value;
+
+    flexc.style.alignContent = wartosc;
+}
+
 function flexWrap() {
     const wartosc = document.querySelector("#flex-wrap").value;
 
@@ -67,10 +73,10 @@ function reset(numerWlasciwosci) {
         wartoscDomyslna = "nowrap";
         flexc.style.flexWrap = wartoscDomyslna;
     } else if (numerWlasciwosci == 5) {
-        wartoscDomyslna = "0px";
-        flexc.style.gap = wartoscDomyslna;
+        wartoscDomyslna = "initial";
+        flexc.style.alignContent = wartoscDomyslna;
     } else if (numerWlasciwosci == 6) {
-        wartoscDomyslna = "stretch";
+        wartoscDomyslna = "0px";
         flexc.style.gap = wartoscDomyslna;
     }
 }
