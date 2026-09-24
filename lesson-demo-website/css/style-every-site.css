@@ -1,0 +1,250 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    color:white;
+}
+
+body{
+    background: #0b1226;
+    display:grid;
+    grid-template-columns: 6vw 1fr 1fr 1fr 1fr 6vw;
+}
+
+header{
+    padding-left:2em;
+    height:100px;
+    grid-column: 1/4;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #0b1226 , #101a36);
+}
+
+header h1{
+    z-index:1;
+    font-family: "Audiowide", Cambria, Cochin, Georgia, Times, serif;
+    font-weight: 400;
+    font-size:3.3em;
+    margin-left:1.4vw;
+}
+
+nav{
+    height:100px;
+    background: linear-gradient(to right, #101a36 , #182750);
+    grid-column: 4/7;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    width:100%;
+    height:100%;
+    flex-flow:row wrap;
+    align-items:center;
+    align-content:space-evenly;
+    justify-content:flex-end;;
+}
+
+nav ul li{
+    margin:0 1.4em;
+}
+
+@media (max-width:750px){
+    body nav ul li{
+        margin-right:15px;
+    }
+
+    body header{
+        padding-left:0;
+    }
+
+    main button{
+        width:100px;
+        margin:8px auto 0;
+    }    
+
+    html body main .flexc{
+        top:500px;
+    }
+    html body main .flexdesc{
+        top:720px;
+    }
+}
+
+nav ul a{
+    font-family: "Poppins", Georgia, serif;
+    color:white;
+    text-decoration: none;
+    font-size:1.1em;
+    padding-bottom:2px;
+    transition: 0.2s linear;;
+}
+
+nav ul li a:hover{
+    color:rgb(156, 156, 156);
+    border-bottom:2px solid;
+}
+
+footer{
+    font-family: "Poppins", Georgia, serif; 
+    font-size:1.3em;
+    background: linear-gradient(to right, #0b1226 , #182750);
+    grid-column: 1/7;
+    height:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    grid-column: 2/6;
+    padding:2em 0.5em;
+    font-family: Poppins, serif;
+    font-size:1.1em;
+}
+
+main h1{
+    font-weight:600;
+    width:60%;
+    padding-bottom:0.1em;
+    border-bottom: 2px solid;
+    margin-bottom: 0.7em;
+}
+
+main h2{
+    font-weight:500;
+    font-size:1.5em;
+    margin: 0.9em 0 0.35em;
+    font-style: italic;
+}
+
+main article{
+    line-height:1.6em;
+    margin-bottom:2em;
+}
+
+.wholemain{
+    padding:1em 0;
+    width:98%;
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 50px;
+    margin-bottom:1em;
+}
+
+.halfmain{
+    width:45%;
+    background-color: rgba(255,255,255,0.45);
+    border-radius:50px;
+    padding:1em 2em;
+    font-size:0.9em;
+}
+
+code{
+    font-size:1.2em;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color:lightcoral;
+}
+
+i{
+    font-size:1.2em;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    color:lightskyblue;
+}
+
+main .flexc{
+    height:400px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 50px;
+    width:45%;
+    position:fixed;
+    right:6vw;
+    top: 50%;
+    padding:1em 2em;
+    -ms-transform: translate(0, -50%);
+    transform: translate( 0, -50%);
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+}
+
+main .flexc div{
+    color:rgb(140, 163, 238);
+    background-color:rgb(23, 52, 114);
+    width:100px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border:2px solid rgb(3, 20, 75);
+}
+
+main .flexdesc{
+    position:fixed;
+    left:50vw;
+    top: 75vh;
+}
+
+@media (max-height:840px){
+    body main .flexc{
+        top:420px;
+    }
+    body main .flexdesc{
+        top:640px;
+    }
+}
+
+input,button,select{
+    color:black;
+    font-family:Poppins, serif;
+    font-weight: 600;
+    border-radius:50px;
+    padding:3px 4px;
+    border:none !important;
+}
+
+.inputdesign{
+    width:45%;
+    background-color:rgb(26, 39, 59);
+    border-radius:50px;
+    padding:1em 2em;
+    font-size:0.9em;
+    margin-bottom: 3em;
+
+}
+
+.inputdesign label{
+    display: inline-block;
+    width:130px;
+    margin-right:20px;
+    margin-bottom: 7px;
+}
+
+.inputdesign input{
+    width:100px;
+    margin-bottom: 7px;
+}
+
+button{
+    margin-top:20px;
+    display: inline-block;
+    width:170px;
+    margin:30px 20px 0 0;
+    border:none !important;
+    transition:0.3s linear;
+}
+
+button:nth-last-child(1){
+    margin-top:10px;
+}
+
+button:hover{
+    background-color: #315dd6;
+    color:white;
+}
+option{
+    color: black;
+}
